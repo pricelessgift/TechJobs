@@ -50,7 +50,6 @@ const router = createBrowserRouter(
  <Route index element={<HomePage />} />
  <Route path='/jobs' element={<JobsPage />} />
  <Route path='/add-job' element={<AddJobPage addJobSubmit={addJob}/>} />
- <Route path='/api/jobs' element={<JobsPage />} />
  <Route path='/edit-job/:id' 
  element={<EditJobPage updateJobSubmit={updateJob}/>} 
  loader={jobLoader}
