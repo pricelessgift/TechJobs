@@ -1,6 +1,6 @@
 import Hero from '../component/Hero';
 import HomeCards from '../component/HomeCard';
-import Joblistings from '../component/Joblistings';
+import JobListings from '../component/JobListings';
 import ViewAllJobs from '../component/ViewAllJobs';
 
 const HomePage = () => {
@@ -8,10 +8,10 @@ const HomePage = () => {
     <>
     <Hero />
     <HomeCards />
-    <Joblistings  isHome= {true}/>
+    <JobListings isHome={true}/>
     <ViewAllJobs />
     </>
   )
 }
 
-export default HomePage
+export default HomePage;
