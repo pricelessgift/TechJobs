@@ -11,6 +11,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import Jobpage, {jobLoader} from './pages/Jobpage';
 import AddJobPage from './pages/AddJobPage';
 import EditJobPage from './pages/EditJobPage';
+import JobListings from './component/JobListings';
 
 
 const App = () => {
@@ -49,6 +50,7 @@ const router = createBrowserRouter(
  <Route index element={<HomePage />} />
  <Route path='/jobs' element={<JobsPage />} />
  <Route path='/add-job' element={<AddJobPage addJobSubmit={addJob}/>} />
+ <Route path='/api/jobs' element={<JobListings />} />
  <Route path='/edit-job/:id' 
  element={<EditJobPage updateJobSubmit={updateJob}/>} 
  loader={jobLoader}
